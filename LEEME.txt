@@ -1,0 +1,11 @@
+android filesystem location:
+/data/data/com.intec.porksaver/database/PORK.db
+
+*******SCHEMA*******
+dbname: PORK.db
+*******TABLES*******
+CREATE TABLE [entradas] (
+[id] INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
+[fecha] TEXT  NOT NULL,
+[monto] REAL  NOT NULL
+);

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PorkSaverActivity!</string>
+    <string name="app_name">Mi Alcancia</string>
+    <string name="entrada">Ver alcancía</string>
+    <string name="salir">Salir</string>
+    <string name="moneda_imagen">MonedaImagen</string>
+    <string name="fondo_imagen">ImagenFondo</string>
+    <string name="puerco_imagen">ImagenPuerco</string>
+    <string name="roto_imagen">RotoImagen</string>
+
+</resources>

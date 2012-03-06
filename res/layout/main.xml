@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background2" >
+
+    <Button
+        android:id="@+id/boton_entrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="218dp"
+        android:layout_y="432dp"
+        android:onClick="onClick"
+        android:text="@string/entrada" />
+
+    <ImageView
+        android:id="@+id/puerco_Vista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="66dp"
+        android:layout_y="134dp"
+        android:contentDescription="@string/puerco_imagen"
+        android:onClick="onClick"
+        android:src="@drawable/piggy" />
+
+    <TextView
+        android:id="@+id/cmonedas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="126dp"
+        android:layout_y="199dp"
+        android:text="$"
+        android:textColor="#000"
+        android:textSize="50px" />
+
+    <AbsoluteLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/aLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/moneda1_Vista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_x="15dp"
+            android:layout_y="359dp"
+            android:contentDescription="@string/moneda_imagen"
+            android:src="@drawable/moneda1" />
+
+        <ImageView
+            android:id="@+id/moneda5_Vista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="87dp"
+            android:layout_x="89dp"
+            android:layout_y="358dp"
+            android:contentDescription="@string/moneda_imagen"
+            android:src="@drawable/moneda5" />
+
+        <ImageView
+            android:id="@+id/moneda25_Vista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_x="242dp"
+            android:layout_y="353dp"
+            android:contentDescription="@string/moneda_imagen"
+            android:src="@drawable/moneda25" />
+
+        <ImageView
+            android:id="@+id/moneda10_Vista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_marginRight="87dp"
+            android:layout_x="166dp"
+            android:layout_y="357dp"
+            android:contentDescription="@string/moneda_imagen"
+            android:src="@drawable/moneda10" />
+    </AbsoluteLayout>
+
+</AbsoluteLayout>
