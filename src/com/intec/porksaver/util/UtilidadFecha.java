@@ -13,7 +13,7 @@ import java.util.Date;
 public final class UtilidadFecha {
 
 	/** Formato de la fecha a convertir. */
-	public static final String PATRON_FECHA = "dd/MM/yyyy hh:mm";
+	public static final String PATRON_FECHA = "dd/MM/yyyy HH:mm a";
 	
 	private static final SimpleDateFormat formato = new SimpleDateFormat(PATRON_FECHA);
 	
