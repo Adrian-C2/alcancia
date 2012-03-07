@@ -4,7 +4,8 @@ import java.util.Date;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,11 +13,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.FrameLayout.LayoutParams;
+import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
-//import android.widget.LinearLayout;
-//import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.intec.porksaver.R;
@@ -33,6 +32,8 @@ import com.intec.porksaver.social.ImplFacebook;
  */
 public class ActividadAlcancia extends Activity //implements OnTouchListener
 {
+	private static final String LLAVE_LIMITE_ROTOS = "maximoRotos";
+
 	/** Representa la cantidad de rotos m�ximo del usuario. */
 	private static final int ROTOS_MAXIMO = 5;
 	
@@ -113,6 +114,9 @@ public class ActividadAlcancia extends Activity //implements OnTouchListener
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		
+		validarRotos();
+		
 		fuenteDatos = new ImplDaoEntrada(this);
 		fuenteDatos.abrir();		
 		//setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -373,9 +377,27 @@ public class ActividadAlcancia extends Activity //implements OnTouchListener
 	@Override
 	protected void onPause() {
 		fuenteDatos.cerrar();
+		final SharedPreferences prefs = getPreferences(MODE_PRIVATE);
+		final Editor editor = prefs.edit();
+		editor.putInt(LLAVE_LIMITE_ROTOS, roto_conteo);
+		editor.commit();
 		super.onPause();
 	}
 
+	/**
+	 * @author jmendoza | 2008-0060
+	 * Metodo que se encarga de validar si la cantidad de rotos es 5 para desinstalar la aplicacion.
+	 * Bajo construccion.
+	 */
+	private void validarRotos() {
+		final SharedPreferences prefs = getPreferences(MODE_PRIVATE);
+		final int rotos = prefs.getInt(LLAVE_LIMITE_ROTOS, 0);
+		if (rotos == ROTOS_MAXIMO) {
+			final Intent actividadDesinstalar = new Intent(this, ActividadDesinstalar.class);
+			startActivity(actividadDesinstalar);
+		}
+	}
+	
 	private boolean haAlcanzadoToquesMaximo() {
 		return (roto_conteo >= 3) ;
 	}

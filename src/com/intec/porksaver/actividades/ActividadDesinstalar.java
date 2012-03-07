@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 /**
+ * ActividadDesinstalar es responsable de correr la accion de borrar la aplicacion.
  * @author jmendoza | m: 2008-0060
  */
 public class ActividadDesinstalar extends Activity {
