@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
-
+
     <Button
         android:id="@+id/boton_salir"
         android:layout_width="72dp"
@@ -17,6 +17,11 @@
         android:onClick="onClick"
         android:text="@string/salir" />
 
+    <TextView android:id="@+id/montoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monto"/>
+    
     </LinearLayout>
 
     <ListView

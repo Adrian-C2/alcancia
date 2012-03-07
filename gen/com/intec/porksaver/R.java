@@ -27,19 +27,20 @@ public final class R {
         public static final int piggycracked=0x7f02000d;
     }
     public static final class id {
-        public static final int aLayout1=0x7f060004;
-        public static final int aLayout2=0x7f060009;
-        public static final int boton_RedesSociales=0x7f060005;
-        public static final int boton_entrada=0x7f060006;
-        public static final int boton_salir=0x7f060002;
-        public static final int cmonedas=0x7f060008;
+        public static final int aLayout1=0x7f060005;
+        public static final int aLayout2=0x7f06000a;
+        public static final int boton_RedesSociales=0x7f060006;
+        public static final int boton_entrada=0x7f060007;
+        public static final int boton_salir=0x7f060003;
+        public static final int botones=0x7f060002;
+        public static final int cmonedas=0x7f060009;
         public static final int login_button=0x7f060000;
-        public static final int moneda10_Vista=0x7f06000d;
-        public static final int moneda1_Vista=0x7f06000a;
-        public static final int moneda25_Vista=0x7f06000c;
-        public static final int moneda5_Vista=0x7f06000b;
-        public static final int montoTotal=0x7f060003;
-        public static final int puerco_Vista=0x7f060007;
+        public static final int moneda10_Vista=0x7f06000e;
+        public static final int moneda1_Vista=0x7f06000b;
+        public static final int moneda25_Vista=0x7f06000d;
+        public static final int moneda5_Vista=0x7f06000c;
+        public static final int montoTotal=0x7f060004;
+        public static final int puerco_Vista=0x7f060008;
         public static final int tweet_button=0x7f060001;
     }
     public static final class layout {

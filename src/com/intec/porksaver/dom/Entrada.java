@@ -61,8 +61,8 @@ public class Entrada implements Identificable<Entrada>, Serializable {
 	@Override
 	public String toString() {
 		final StringBuilder sb = new StringBuilder();
-		sb.append(" [Fecha = [ " + UtilidadFecha.convertirFecha(obtenerFecha()) + " ] ");
-		sb.append(" Moneda = [ " + obtenerMonto() + " ] ]");
+		sb.append(" Fecha = " + UtilidadFecha.convertirFecha(obtenerFecha()) + " \n");
+		sb.append(" Moneda = " + obtenerMonto());
 
 		return sb.toString();
 	}

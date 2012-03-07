@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
 import com.intec.porksaver.R;
 import com.intec.porksaver.dao.impl.ImplDaoEntrada;
@@ -34,6 +35,9 @@ public class ActividadEntrada extends ListActivity {
 		final ArrayAdapter<Entrada> listaAdaptada = new ArrayAdapter<Entrada>(this,
 				android.R.layout.simple_list_item_1, historiales);
 		setListAdapter(listaAdaptada);
+		
+		final TextView montoTotal = (TextView)findViewById(R.id.montoTotal);
+		montoTotal.setText("Mi cerdito tiene: " + fuenteDatos.obtenerMontoTotal() + " $RD!! ");
 	}
 
 	public void onClick(final View vista) {
