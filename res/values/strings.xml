@@ -9,5 +9,6 @@
     <string name="fondo_imagen">ImagenFondo</string>
     <string name="puerco_imagen">ImagenPuerco</string>
     <string name="roto_imagen">RotoImagen</string>
+    <string name="RedesSociales">Redes Sociales</string>
 
 </resources>

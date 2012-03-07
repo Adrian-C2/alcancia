@@ -11,19 +11,18 @@ import twitter4j.auth.RequestToken;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
-import android.view.View;
 import android.webkit.WebView;
 import android.widget.Toast;
 
 /**
  * @author jdemorizzi | m: 2008-0805
  */
-public class TwitterImpl {
+public class ImplTwitter {
 
 	/**
 	 * 
 	 */
-	private static final String TAG = TwitterImpl.class.getName();
+	private static final String TAG = ImplTwitter.class.getName();
 	/** Name to store the users access token */
 	private static final String PREF_ACCESS_TOKEN = "515698055-hzv7Dv8bah6EZgqnWH321hgMFCRGCtzZsMY0OybM";
 	/** Name to store the users access token secret */
@@ -56,7 +55,7 @@ public class TwitterImpl {
 	private Context contexto;
 	private boolean login;
 
-	public TwitterImpl(Context contexto) {
+	public ImplTwitter(Context contexto) {
 		mTwitter = new TwitterFactory().getInstance();
 		mTwitter.setOAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET);
 		this.contexto = contexto;
