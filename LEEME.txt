@@ -9,3 +9,14 @@ CREATE TABLE [entradas] (
 [fecha] TEXT  NOT NULL,
 [monto] REAL  NOT NULL
 );
+
+
+Para usar facebook y twitter deben tener los siguientes jars:
+- facebook
+ - signpost-commonshttp4-1.2.1.2
+ - signpost-core-1.2.1.1
+ - signpost-jetty6-1.2.1.2
+ - SocialLibBeta2_2
+ - scribe-0.6.6
+- twitter
+ - twitter4j-core-android-2.2.3-1
