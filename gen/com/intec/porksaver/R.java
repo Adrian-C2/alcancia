@@ -31,14 +31,14 @@ public final class R {
         public static final int aLayout2=0x7f060009;
         public static final int boton_RedesSociales=0x7f060005;
         public static final int boton_entrada=0x7f060006;
-        public static final int boton_salir=0x7f060003;
-        public static final int botones=0x7f060002;
+        public static final int boton_salir=0x7f060002;
         public static final int cmonedas=0x7f060008;
         public static final int login_button=0x7f060000;
         public static final int moneda10_Vista=0x7f06000d;
         public static final int moneda1_Vista=0x7f06000a;
         public static final int moneda25_Vista=0x7f06000c;
         public static final int moneda5_Vista=0x7f06000b;
+        public static final int montoTotal=0x7f060003;
         public static final int puerco_Vista=0x7f060007;
         public static final int tweet_button=0x7f060001;
     }
@@ -63,6 +63,7 @@ public final class R {
         public static final int fondo_imagen=0x7f050005;
         public static final int hello=0x7f050000;
         public static final int moneda_imagen=0x7f050004;
+        public static final int monto=0x7f050009;
         public static final int puerco_imagen=0x7f050006;
         public static final int roto_imagen=0x7f050007;
         public static final int salir=0x7f050003;

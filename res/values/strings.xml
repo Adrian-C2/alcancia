@@ -10,5 +10,6 @@
     <string name="puerco_imagen">ImagenPuerco</string>
     <string name="roto_imagen">RotoImagen</string>
     <string name="RedesSociales">Redes Sociales</string>
+    <string name="monto">Monto Total</string>
 
 </resources>
